@@ -35,7 +35,10 @@ public class FinalCalulations extends AppCompatActivity {
         reach = SpellData.getInstance().getReach();
         UpdateReach();
         // set paradox dice
+        if(SpellData.getInstance().GetCastingMethod() != "Rote")
         minParadox = ( (SpellData.getInstance().getArcanumLevel() - SpellData.getInstance().getSpellLevel() + 1) - reach ) * GnosisData.GetParadox(SpellData.getInstance().getGnosis()) * -1;
+        else
+            minParadox = ( (5 - SpellData.getInstance().getSpellLevel() + 1) - reach ) * GnosisData.GetParadox(SpellData.getInstance().getGnosis()) * -1;
 
         if(minParadox >= 0)
         paradox = minParadox;
