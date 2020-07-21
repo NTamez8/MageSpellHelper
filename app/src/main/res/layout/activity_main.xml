@@ -10,21 +10,22 @@
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="81dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="160dp"
+        android:onClick="IsRuling"
+
         android:text="ToggleButton"
         android:textOff="is Not Ruling"
         android:textOn="Is Ruling"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/Gnosis"
-        android:onClick="IsRuling"/>
+        app:layout_constraintBottom_toTopOf="@+id/ToPhaseTwo"
+        app:layout_constraintStart_toEndOf="@+id/textView13" />
 
     <RadioGroup
         android:id="@+id/CastingMethod"
-        android:layout_width="172dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="41dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
@@ -62,271 +63,83 @@
             android:text="Grimoire" />
     </RadioGroup>
 
-    <RadioGroup
-        android:id="@+id/SpellLevel"
-        android:layout_width="56dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="119dp"
-        android:layout_marginTop="70dp"
-        app:layout_constraintStart_toEndOf="@+id/radioGroup"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
-
-        <RadioButton
-            android:id="@+id/Arcanum1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:onClick="onRadioButtonClickLevel"
-            android:text="1" />
-
-        <RadioButton
-            android:id="@+id/Arcanum2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickLevel"
-            android:text="2" />
-
-        <RadioButton
-            android:id="@+id/Arcanum3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickLevel"
-            android:text="3" />
-
-        <RadioButton
-            android:id="@+id/Arcanum4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickLevel"
-            android:text="4" />
-
-        <RadioButton
-            android:id="@+id/Arcanum5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickLevel"
-            android:text="5" />
-    </RadioGroup>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="5dp"
         android:text="Set Arcanum Level"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="39dp"
         android:text="Casting Method"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioGroup
-        android:id="@+id/Gnosis"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:layout_marginTop="44dp"
-        android:orientation="horizontal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3">
-
-        <RadioButton
-            android:id="@+id/gnosis1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="1" />
-
-        <RadioButton
-            android:id="@+id/gnosis2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="2" />
-
-        <RadioButton
-            android:id="@+id/gnosis3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="3" />
-
-        <RadioButton
-            android:id="@+id/gnosis4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="4" />
-
-        <RadioButton
-            android:id="@+id/gnosis5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="5" />
-
-        <RadioButton
-            android:id="@+id/gnosis6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="6" />
-
-        <RadioButton
-            android:id="@+id/gnosis7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="7" />
-
-        <RadioButton
-            android:id="@+id/gnosis8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="8" />
-
-        <RadioButton
-            android:id="@+id/gnosis9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="9" />
-
-        <RadioButton
-            android:id="@+id/gnosis10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickGnosis"
-            android:text="10" />
-    </RadioGroup>
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="88dp"
         android:text="Gnosis"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/ToPhaseTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginBottom="380dp"
         android:text="Next"
         android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
         android:text="Spell Level"
         android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="56dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="70dp"
-        app:layout_constraintStart_toEndOf="@+id/CastingMethod"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-        <RadioButton
-            android:id="@+id/SpellLevel1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:onClick="onRadioButtonClickSpellLevel"
-            android:text="1" />
-
-        <RadioButton
-            android:id="@+id/SpellLevel2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickSpellLevel"
-            android:text="2" />
-
-        <RadioButton
-            android:id="@+id/SpellLevel3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickSpellLevel"
-            android:text="3" />
-
-        <RadioButton
-            android:id="@+id/SpellLevel4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickSpellLevel"
-            android:text="4" />
-
-        <RadioButton
-            android:id="@+id/SpellLevel5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickSpellLevel"
-            android:text="5" />
-    </RadioGroup>
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="77dp"
         android:text="Primary Spell Factor"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Gnosis" />
+        app:layout_constraintTop_toBottomOf="@+id/CastingMethod" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="146dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="39dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13">
 
@@ -346,6 +159,39 @@
             android:layout_weight="1"
             android:onClick="onRadioButtonClickPrimary"
             android:text="Duration" />
+
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/SpellLevelSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="41dp"
+        android:layout_weight="1"
+        android:entries="@array/Spell_Level"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toEndOf="@+id/CastingMethod"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Spinner
+        android:id="@+id/GnosisSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="80dp"
+        android:entries="@array/Gnosis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Spinner
+        android:id="@+id/ArcanumLevelSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="87dp"
+        android:entries="@array/Spell_Level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </android.support.constraint.ConstraintLayout>

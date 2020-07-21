@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,11 +26,31 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                assignSpellFactors();
                 SpellData.getInstance().setRitualTime(GnosisData.GetRitualInterval(SpellData.getInstance().getGnosis()));
                 Intent startintent = new Intent(getApplicationContext(), AssignReach.class);
                 startActivity(startintent);
             }
         });
+    }
+
+    private void assignSpellFactors()
+    {
+        Spinner ArcanumSpinner = findViewById(R.id.ArcanumLevelSpinner);
+        Spinner LevelSpinner,GnosisSpinner;
+        String arcanumString = ArcanumSpinner.getSelectedItem().toString();
+        String gnosisString,spellLevelString;
+        SpellData.getInstance().setArcanumLevelet(Integer.parseInt(arcanumString));
+
+        GnosisSpinner = findViewById(R.id.GnosisSpinner);
+        gnosisString = GnosisSpinner.getSelectedItem().toString();
+        LevelSpinner = findViewById(R.id.SpellLevelSpinner);
+        spellLevelString = LevelSpinner.getSelectedItem().toString();
+        SpellData.getInstance().setSpellLevel(Integer.parseInt(spellLevelString));
+        SpellData.getInstance().setGnosis(Integer.parseInt(gnosisString));
+
+
+
     }
     public void onRadioButtonClickCasting(View view)
     {
@@ -54,61 +75,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-    public void onRadioButtonClickSpellLevel(View view)
-    {
 
-        boolean checked = ((RadioButton) view).isChecked();
-        switch(view.getId()){
-            case R.id.SpellLevel1:
-                if(checked)
-                    SpellData.getInstance().setSpellLevel(1);
-                break;
-            case R.id.SpellLevel2:
-                if(checked)
-                    SpellData.getInstance().setSpellLevel(2);
-                break;
-            case R.id.SpellLevel3:
-                if(checked)
-                    SpellData.getInstance().setSpellLevel(3);
-                break;
-            case R.id.SpellLevel4:
-                if(checked)
-                    SpellData.getInstance().setSpellLevel(4);
-                break;
-            case R.id.SpellLevel5:
-                if(checked)
-                    SpellData.getInstance().setSpellLevel(5);
-                break;
-        }
 
-    }
-    public void onRadioButtonClickLevel(View view)
-    {
-        boolean checked = ((RadioButton) view).isChecked();
-        switch(view.getId()){
-            case R.id.Arcanum1:
-                if(checked)
-                    SpellData.getInstance().setArcanumLevelet(1);
-                    break;
-            case R.id.Arcanum2:
-                if(checked)
-                    SpellData.getInstance().setArcanumLevelet(2);
-                    break;
-            case R.id.Arcanum3:
-                if(checked)
-                    SpellData.getInstance().setArcanumLevelet(3);
-                    break;
-            case R.id.Arcanum4:
-                if(checked)
-                    SpellData.getInstance().setArcanumLevelet(4);
-                    break;
-            case R.id.Arcanum5:
-                if(checked)
-                    SpellData.getInstance().setArcanumLevelet(5);
-                    break;
-
-        }
-    }
     public void onRadioButtonClickPrimary(View view)
     {
         boolean checked = ((RadioButton) view).isChecked();
@@ -128,53 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-    public void onRadioButtonClickGnosis(View view)
-    {
-        boolean checked = ((RadioButton) view).isChecked();
-        switch(view.getId()){
-            case R.id.gnosis1:
-                if(checked)
-                    SpellData.getInstance().setGnosis(1);
-                    break;
-            case R.id.gnosis2:
-                if(checked)
-                    SpellData.getInstance().setGnosis(2);
-                    break;
-            case R.id.gnosis3:
-                if(checked)
-                    SpellData.getInstance().setGnosis(3);
-                    break;
-            case R.id.gnosis4:
-                if(checked)
-                    SpellData.getInstance().setGnosis(4);
-                    break;
-            case R.id.gnosis5:
-                if(checked)
-                    SpellData.getInstance().setGnosis(5);
-                    break;
-            case R.id.gnosis6:
-                if(checked)
-                    SpellData.getInstance().setGnosis(6);
-                    break;
-            case R.id.gnosis7:
-                if(checked)
-                    SpellData.getInstance().setGnosis(7);
-                    break;
-            case R.id.gnosis8:
-                if(checked)
-                    SpellData.getInstance().setGnosis(8);
-                    break;
-            case R.id.gnosis9:
-                if(checked)
-                    SpellData.getInstance().setGnosis(9);
-                    break;
-            case R.id.gnosis10:
-                if(checked)
-                    SpellData.getInstance().setGnosis(10);
-                    break;
 
-        }
-    }
     public void IsRuling(View view)
     {
         boolean checked = ((ToggleButton) view).isChecked();
