@@ -32,30 +32,30 @@
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="232dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="19dp"
         android:text="Free Points"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/DicePool"
+        app:layout_constraintEnd_toStartOf="@+id/FreePoints"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/FreePoints"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
         android:text="0"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="220dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="200dp"
         android:text="Standard Potency"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,23 +65,23 @@
         android:id="@+id/Duration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="248dp"
-        android:layout_marginStart="196dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="32dp"
         android:text="Duration Standard"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DecreaseScale" />
 
     <TextView
         android:id="@+id/Scale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
         android:layout_marginEnd="220dp"
-        android:layout_marginTop="348dp"
         android:text="Scale Standard"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/IncreasePotency" />
 
     <TextView
         android:id="@+id/textView20"
@@ -131,49 +131,49 @@
         android:id="@+id/ScaleSize"
         android:layout_width="32dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="52dp"
-        android:layout_marginTop="92dp"
         android:text="5"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/ScaleArea"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
         android:id="@+id/ScaleArea"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="92dp"
         android:text="Arm's Reach"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintEnd_toStartOf="@+id/ScaleDicePenalty"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <TextView
         android:id="@+id/ScaleDicePenalty"
         android:layout_width="37dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginTop="92dp"
         android:text="0"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
         android:id="@+id/ScaleTargets"
         android:layout_width="43dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="14dp"
         android:text="1"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <TextView
         android:id="@+id/textView15"
@@ -201,12 +201,12 @@
         android:id="@+id/Potency"
         android:layout_width="33dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="200dp"
+        android:layout_marginStart="173dp"
         android:layout_marginTop="8dp"
         android:text="1"
         android:textAlignment="center"
         android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/PotencyDicePenalty"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
@@ -226,56 +226,58 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="17dp"
+        android:onClick="ButtonClick"
         android:text="Increase Potency"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        android:onClick="ButtonClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/Potency" />
 
     <Button
         android:id="@+id/DecreasePotency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="135dp"
+        android:onClick="ButtonClick"
         android:text="Decrease Potency"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/IncreasePotency"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        android:onClick="ButtonClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/PotencyDicePenalty" />
 
     <Button
         android:id="@+id/DecreaseScale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="152dp"
-        android:layout_marginTop="156dp"
+        android:onClick="ButtonClick"
         android:text="Decrease Scale"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Scale"
-        android:onClick="ButtonClick"/>
+        app:layout_constraintTop_toBottomOf="@+id/ScaleArea" />
 
     <Button
         android:id="@+id/IncreaseScale"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="56dp"
-        android:layout_marginTop="156dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="30dp"
+        android:onClick="ButtonClick"
         android:text="Increase Scale"
         android:textSize="14sp"
-        app:layout_constraintEnd_toStartOf="@+id/DecreaseScale"
-        app:layout_constraintTop_toBottomOf="@+id/Scale"
-        android:onClick="ButtonClick"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScaleSize" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
+        android:layout_marginStart="128dp"
         android:layout_marginTop="32dp"
         android:text="Duration"
         android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Duration" />
 
     <TextView
@@ -293,12 +295,12 @@
         android:id="@+id/DurationTime"
         android:layout_width="154dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="164dp"
+        android:layout_marginStart="90dp"
         android:layout_marginTop="20dp"
         android:text="1 turn"
         android:textAlignment="center"
         android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/DurationDicePenalty"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
     <TextView
@@ -317,12 +319,12 @@
         android:id="@+id/IncreaseDuration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
+        android:layout_marginStart="85dp"
         android:layout_marginTop="28dp"
+        android:onClick="ButtonClick"
         android:text="Increase Duration"
-        app:layout_constraintEnd_toStartOf="@+id/DecreaseDuration"
-        app:layout_constraintTop_toBottomOf="@+id/DurationTime"
-        android:onClick="ButtonClick"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DurationTime" />
 
     <Button
         android:id="@+id/DecreaseDuration"
@@ -340,9 +342,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="244dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="268dp"
         android:text="Proceed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/DecreaseDuration" />
 
 </android.support.constraint.ConstraintLayout>
