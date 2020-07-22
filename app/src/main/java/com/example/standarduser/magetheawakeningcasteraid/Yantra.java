@@ -45,10 +45,10 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
         switch (view.getId())
         {
-            case R.id.DemenseSelected:
-            case R.id.SupernalVergeSelected:
-            case R.id.Concentration:
-            case R.id.RunesSelected:
+            case R.id.DemesneToggleButton:
+            case R.id.VergeToggleButton:
+            case R.id.ConcentrationToggleButton:
+            case R.id.RunesToggleButton:
                 if(checked)
                 {
                     Dice += 2;
@@ -78,9 +78,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
                 }
                 break;
 
-            case R.id.EnironmentSelected:
-            case R.id.PathToolSelected:
-            case R.id.OrderToolSelected:
+            case R.id.EnvironmentToggleButton:
+            case R.id.PathToggleButton:
+            case R.id.OrderToggleButton:
                 if(checked)
                 {
                     Dice += 1;
@@ -108,7 +108,7 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
                 }
                 break;
-            case R.id.MantraSelected:
+            case R.id.MantraToggleButton:
                 if(checked)
                 {
                     Dice += 2;
@@ -123,7 +123,7 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
                 }
                 break;
-            case R.id.PatronToolSelected:
+            case R.id.PatronToggleButton:
                 if(checked)
                 {
                     Dice += patronvalue;
@@ -151,7 +151,7 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
                 }
                 break;
-            case R.id.SympathSelected:
+            case R.id.SympathyToggleButton:
                 if(checked)
                 {
                     Dice += sympathvalue;
@@ -179,7 +179,7 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
                 }
                 break;
-            case R.id.SacramentSelected:
+            case R.id.SacramentToggleButton:
                 if(checked)
                 {
                     Dice += sacramentvalue;
@@ -207,7 +207,7 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
                 }
                 break;
-            case R.id.PersonaSelected:
+            case R.id.PersonaToggleButton:
                 if(checked)
                 {
                     Dice += personavalue;
@@ -235,7 +235,7 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
                 }
                 break;
-            case R.id.MudraSelected:
+            case R.id.MudraToggleButton:
                 if(checked && SpellData.getInstance().GetCastingMethod().equals("Rote"))
                 {
                     Dice += mudravalue;
@@ -298,9 +298,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
         switch (view.getId())
         {
-            case R.id.MudraUp:
+            case R.id.MudraUpButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.MudraSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.MudraToggleButton);
                 if(tb.isChecked())
                     break;
                 mudravalue++;
@@ -309,9 +309,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
             }
                 break;
-            case R.id.MudraDown:
+            case R.id.MudraDownButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.MudraSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.MudraToggleButton);
                 if(tb.isChecked())
                     break;
                 mudravalue--;
@@ -320,9 +320,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
             }
                 break;
-            case R.id.PatronUp:
+            case R.id.PatronUpButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.PatronToolSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.PatronToggleButton);
                 if(tb.isChecked())
                     break;
                 patronvalue++;
@@ -331,20 +331,20 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
             }
                 break;
-            case R.id.SympathUp:
+            case R.id.SympathyUpButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.SympathSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.SympathyToggleButton);
                 if(tb.isChecked())
                     break;
                 sympathvalue++;
-                TextView tv = (TextView)findViewById(R.id.SympathValue);
+                TextView tv = (TextView)findViewById(R.id.SympathyValue);
                 tv.setText(sympathvalue.toString());
 
             }
                 break;
-            case R.id.SacramentUp:
+            case R.id.SacramentUpBotton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.SacramentSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.SacramentToggleButton);
                 if(tb.isChecked())
                     break;
                 sacramentvalue++;
@@ -353,9 +353,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
             }
                 break;
-            case R.id.PersonaUp:
+            case R.id.PersonaUpButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.PersonaSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.PersonaToggleButton);
                 if(tb.isChecked())
                     break;
                 personavalue++;
@@ -365,9 +365,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
             }
                 break;
 
-            case R.id.PatronDown:
+            case R.id.PatronDownButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.PatronToolSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.PatronToggleButton);
                 if(tb.isChecked())
                     break;
                 patronvalue--;
@@ -376,20 +376,20 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
             }
                 break;
-            case R.id.SympathDown:
+            case R.id.SympathyDownButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.SympathSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.SympathyToggleButton);
                 if(tb.isChecked())
                     break;
                 sympathvalue--;
-                TextView tv = (TextView)findViewById(R.id.SympathValue);
+                TextView tv = (TextView)findViewById(R.id.SympathyValue);
                 tv.setText(sympathvalue.toString());
 
             }
                 break;
-            case R.id.SacramentDown:
+            case R.id.SacramentDownBotton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.SacramentSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.SacramentToggleButton);
                 if(tb.isChecked())
                     break;
                 sacramentvalue--;
@@ -398,9 +398,9 @@ public class Yantra extends AppCompatActivity {// note fix this so that if casti
 
             }
                 break;
-            case R.id.PersonaDown:
+            case R.id.PersonaDownButton:
             {
-                ToggleButton tb = (ToggleButton)findViewById(R.id.PersonaSelected);
+                ToggleButton tb = (ToggleButton)findViewById(R.id.PersonaToggleButton);
                 if(tb.isChecked())
                     break;
                 personavalue--;

@@ -8,770 +8,8 @@
     android:focusableInTouchMode="true"
     tools:context=".Yantra">
 
-    <ImageButton
-        android:id="@+id/PersonaUp"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/SacramentDown"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="ChangeDiceBonus"/>
 
-    <ImageButton
-        android:id="@+id/SacramentUp"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/SympathDown"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="ChangeDiceBonus"/>
 
-    <ImageButton
-        android:id="@+id/SympathUp"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/PatronDown"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <ImageButton
-        android:id="@+id/PatronUp"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="224dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/MudraDown"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <TableLayout
-        android:id="@+id/tableLayout"
-        android:layout_width="528dp"
-        android:layout_height="753dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/DemenseSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView35"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Demesne"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView34"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+2"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/EnironmentSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView36"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Environment"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView37"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+1"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/SupernalVergeSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView38"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Supernal Verge"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView39"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+2"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/Concentration"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView40"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Concentration"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+2"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/MudraSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Mudra"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/MudraValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+0"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/MantraSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView44"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Mantra"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView45"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+2"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/RunesSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView46"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Runes"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView47"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+2"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/PathToolSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView48"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Path Tool"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView49"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+1"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/OrderToolSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView50"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Order Tool"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView51"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+1"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/PatronToolSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/PatronTool"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Patron Tool"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/PatronValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+0"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/SympathSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView53"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Sympathy"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/SympathValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+0"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/SacramentSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView55"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Sacrament"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/SacramentValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+0"
-                    android:textAlignment="textEnd"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <ToggleButton
-                    android:id="@+id/PersonaSelected"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="ToggleButton"
-                    android:textOff="Not Selected"
-                    android:textOn="Selected"
-                    android:onClick="OnToggleClickYantra"/>
-
-                <Space
-                    android:layout_width="112dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/textView57"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="Persona"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-                <Space
-                    android:layout_width="93dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:id="@+id/PersonaValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="+0"
-                    android:textAlignment="center"
-                    android:textSize="25sp" />
-
-            </LinearLayout>
-        </TableRow>
-
-    </TableLayout>
-
-    <ImageButton
-        android:id="@+id/MudraUp"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="300dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <ImageButton
-        android:id="@+id/MudraDown"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/MudraUp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <ImageButton
-        android:id="@+id/PatronDown"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/PatronUp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <ImageButton
-        android:id="@+id/SympathDown"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/SympathUp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <ImageButton
-        android:id="@+id/SacramentDown"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/SacramentUp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="ChangeDiceBonus"/>
-
-    <ImageButton
-        android:id="@+id/PersonaDown"
-        android:layout_width="54dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toEndOf="@+id/tableLayout"
-        app:layout_constraintTop_toBottomOf="@+id/PersonaUp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="ChangeDiceBonus"/>
 
     <TextView
         android:id="@+id/textView18"
@@ -827,6 +65,599 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Proceed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/DemesneToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Demesne">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/EnvironmentToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Enironment">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/VergeToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Supernal Verge">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/ConcentrationToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Concentration">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/MudraToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Mudra">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/MudraValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:text="+0">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/MudraUpButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_up_float">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/MudraDownButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_down_float">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/MantraToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Mantra">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/RunesToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Runes">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/PathToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Path Tool">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/OrderToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Order Tool">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="start"
+                    android:text="+2">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/PatronToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Patron Tool">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/PatronValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="+0">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/PatronUpButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_up_float">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/PatronDownButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_down_float">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/SympathyToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Sympathy">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/SympathyValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="+0">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/SympathyUpButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_up_float">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/SympathyDownButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_down_float">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/SacramentToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Sacrament">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/SacramentValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="+0">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/SacramentUpBotton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_up_float">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/SacramentDownBotton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_down_float">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/PersonaToggleButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="ToggleButton"
+                    android:onClick="OnToggleClickYantra"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="Persona">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/PersonaValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:text="+0">
+
+                </TextView>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/PersonaUpButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_up_float">
+
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/PersonaDownButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="ChangeDiceBonus"
+                        android:src="@android:drawable/arrow_down_float">
+
+                    </ImageButton>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </android.support.constraint.ConstraintLayout>
