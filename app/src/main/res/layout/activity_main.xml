@@ -10,15 +10,17 @@
         android:id="@+id/toggleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginBottom="160dp"
-        android:onClick="IsRuling"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="36dp"
 
+        android:layout_marginBottom="32dp"
+        android:onClick="IsRuling"
         android:text="ToggleButton"
         android:textOff="is Not Ruling"
         android:textOn="Is Ruling"
         app:layout_constraintBottom_toTopOf="@+id/ToPhaseTwo"
-        app:layout_constraintStart_toEndOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
     <RadioGroup
         android:id="@+id/CastingMethod"
@@ -68,67 +70,64 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="44dp"
         android:text="Set Arcanum Level"
         android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
         android:text="Casting Method"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="48dp"
         android:text="Gnosis"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/SpellLevelSpinner" />
 
     <Button
         android:id="@+id/ToPhaseTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="380dp"
+        android:layout_marginBottom="104dp"
         android:text="Next"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.443"
+        app:layout_constraintHorizontal_bias="0.535"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="32dp"
         android:text="Spell Level"
         android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/CastingMethod"
+        app:layout_constraintTop_toBottomOf="@+id/ArcanumLevelSpinner" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="77dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="76dp"
         android:text="Primary Spell Factor"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -166,8 +165,8 @@
         android:id="@+id/SpellLevelSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="24dp"
         android:layout_weight="1"
         android:entries="@array/Spell_Level"
         android:spinnerMode="dropdown"
@@ -178,8 +177,8 @@
         android:id="@+id/GnosisSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="48dp"
         android:entries="@array/Gnosis"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -188,10 +187,9 @@
         android:id="@+id/ArcanumLevelSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="87dp"
+        android:layout_marginTop="20dp"
         android:entries="@array/Spell_Level"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="262dp" />
 
 </android.support.constraint.ConstraintLayout>
