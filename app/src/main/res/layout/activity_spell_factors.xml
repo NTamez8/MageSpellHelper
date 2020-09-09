@@ -6,348 +6,420 @@
     android:layout_height="match_parent"
     tools:context=".SpellFactors">
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
-        android:text="Dice Pool"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/DicePool"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="36dp"
-        android:text="0"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="19dp"
-        android:text="Free Points"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/FreePoints"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/FreePoints"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="24dp"
-        android:text="0"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="200dp"
-        android:text="Standard Potency"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="19dp"
+                android:text="Free Points"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/Duration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
-        android:layout_marginTop="32dp"
-        android:text="Duration Standard"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DecreaseScale" />
+            <TextView
+                android:id="@+id/FreePoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="24dp"
+                android:text="0"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/Scale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="220dp"
-        android:text="Scale Standard"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IncreasePotency" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="36dp"
+                android:text="Dice Pool"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="44dp"
-        android:text="Targets"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+            <TextView
+                android:id="@+id/DicePool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="36dp"
+                android:text="0"
+                android:textSize="25sp" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="112dp"
-        android:layout_marginTop="44dp"
-        android:text="Size"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Standard Potency"
+            android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="68dp"
-        android:layout_marginTop="44dp"
-        android:text="Area"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="44dp"
-        android:text="Dice Penalty"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Scale" />
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/ScaleSize"
-        android:layout_width="32dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="52dp"
-        android:text="5"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/ScaleArea"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Potency"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/ScaleArea"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="32dp"
-        android:text="Arm's Reach"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/ScaleDicePenalty"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dice Penalty"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/ScaleDicePenalty"
-        android:layout_width="37dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="76dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
-    <TextView
-        android:id="@+id/ScaleTargets"
-        android:layout_width="43dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="14dp"
-        android:text="1"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="116dp"
-        android:layout_marginTop="24dp"
-        android:text="Dice Penalty"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            <TextView
+                android:id="@+id/Potency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/PotencyDicePenalty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:layout_marginTop="24dp"
-        android:text="Potency"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/Potency"
-        android:layout_width="33dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="173dp"
-        android:layout_marginTop="8dp"
-        android:text="1"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        <Button
+            android:id="@+id/IncreasePotency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ButtonClick"
+            android:text="Increase Potency"
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="51dp" />
 
-    <TextView
-        android:id="@+id/PotencyDicePenalty"
-        android:layout_width="34dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="160dp"
-        android:layout_marginTop="8dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        <Button
+            android:id="@+id/DecreasePotency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="ButtonClick"
+            android:text="Decrease Potency"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="229dp" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/IncreasePotency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="17dp"
-        android:onClick="ButtonClick"
-        android:text="Increase Potency"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Potency" />
+        <TextView
+            android:id="@+id/Duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Duration Standard"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="32dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/DecreasePotency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="135dp"
-        android:onClick="ButtonClick"
-        android:text="Decrease Potency"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/IncreasePotency"
-        app:layout_constraintTop_toBottomOf="@+id/PotencyDicePenalty" />
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Duration"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="128dp"
+                tools:layout_editor_absoluteY="98dp" />
 
-    <Button
-        android:id="@+id/DecreaseScale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="152dp"
-        android:onClick="ButtonClick"
-        android:text="Decrease Scale"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ScaleArea" />
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dice Penalty"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="165dp"
+                tools:layout_editor_absoluteY="98dp" />
 
-    <Button
-        android:id="@+id/IncreaseScale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="30dp"
-        android:onClick="ButtonClick"
-        android:text="Increase Scale"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ScaleSize" />
 
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="32dp"
-        android:text="Duration"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Duration" />
 
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="108dp"
-        android:layout_marginTop="32dp"
-        android:text="Dice Penalty"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Duration" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/DurationTime"
-        android:layout_width="154dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="20dp"
-        android:text="1 turn"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+            <TextView
+                android:id="@+id/DurationTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1 turn"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="152dp" />
 
-    <TextView
-        android:id="@+id/DurationDicePenalty"
-        android:layout_width="40dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="152dp"
-        android:layout_marginTop="20dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+            <TextView
+                android:id="@+id/DurationDicePenalty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="219dp"
+                tools:layout_editor_absoluteY="152dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/IncreaseDuration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
-        android:layout_marginTop="28dp"
-        android:onClick="ButtonClick"
-        android:text="Increase Duration"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DurationTime" />
+            <Button
+                android:id="@+id/IncreaseDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:text="Increase Duration"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="214dp" />
 
-    <Button
-        android:id="@+id/DecreaseDuration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="84dp"
-        android:layout_marginTop="28dp"
-        android:text="Decrease Duration"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DurationDicePenalty"
-        android:onClick="ButtonClick"/>
+            <Button
+                android:id="@+id/DecreaseDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:text="Decrease Duration"
+                tools:layout_editor_absoluteX="163dp"
+                tools:layout_editor_absoluteY="214dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="244dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="268dp"
-        android:text="Proceed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DecreaseDuration" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Scale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Scale Standard"
+            android:textSize="25sp"
+            tools:layout_editor_absoluteX="23dp"
+            tools:layout_editor_absoluteY="34dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Targets"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="40dp"
+                tools:layout_editor_absoluteY="112dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Size"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteY="112dp" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ScaleSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="5"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteY="160dp" />
+
+            <TextView
+                android:id="@+id/ScaleArea"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Arm's Reach"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="66dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+
+
+
+             />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Area"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="112dp" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Dice Penalty"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="112dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ScaleDicePenalty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="298dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+            <TextView
+                android:id="@+id/ScaleTargets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="160dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/DecreaseScale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:text="Decrease Scale"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="121dp"
+                tools:layout_editor_absoluteY="224dp" />
+
+            <Button
+                android:id="@+id/IncreaseScale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:text="Increase Scale"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="224dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Proceed"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="298dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </android.support.constraint.ConstraintLayout>
