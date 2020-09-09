@@ -20,37 +20,45 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:layout_marginEnd="19dp"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="Free Points"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/FreePoints"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="36dp"
                 android:layout_marginEnd="24dp"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="0"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="Dice Pool"
                 android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/DicePool"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="36dp"
+                android:layout_weight="1"
+                android:gravity="center"
                 android:text="0"
                 android:textSize="25sp" />
         </LinearLayout>
