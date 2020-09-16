@@ -1,297 +1,315 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".FinalCalulations">
 
-    <TextView
-        android:id="@+id/TurnName"
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Mana Spent"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/ManaSpent"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Paradox"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/Paradox"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Total Dice "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/totaldice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TurnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Turns "
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/TurnsCalc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="104dp"
-        android:text="Turns"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView27"
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Spent Reach "
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/SReach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="0"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Spend Mana"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/IncreaseManaSpent"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <ImageButton
+                android:id="@+id/DecreaseManaSpent"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Custom Paradox"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/IncreasePar"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+
+            <ImageButton
+                android:id="@+id/DecreasePar"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Ritual Interval"
+                android:textSize="25sp" />
+
+            <ImageButton
+                android:id="@+id/IncreaseRitualInterval"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_up_float" />
+
+            <ImageButton
+                android:id="@+id/DecreaseRitualInterval"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="180dp"
-        android:text="Mana Spent"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="180dp"
-        android:text="Paradox"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/ManaSpent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/TurnsCalc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/TurnName"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView58"
+                android:layout_width="wrap_content"
+                android:layout_height="31dp"
 
-    <TextView
-        android:id="@+id/ManaSpent"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="180dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView27"
-        app:layout_constraintTop_toTopOf="parent" />
+                android:text="Spend Reach"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/Paradox"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="180dp"
-        android:text="0"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toTopOf="parent" />
+            <ImageButton
+                android:id="@+id/SpendReach"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
 
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="40dp"
-        android:text="SpendMana"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_up_float" />
 
-    <ImageButton
-        android:id="@+id/IncreaseManaSpent"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="CalculationButtons"/>
+            <ImageButton
+                android:id="@+id/UnSpendReach"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
 
-    <ImageButton
-        android:id="@+id/DecreaseManaSpent"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="58dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IncreaseManaSpent"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="CalculationButtons"/>
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/CustParUp"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="CalculationButtons"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-    <ImageButton
-        android:id="@+id/CustParDown"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginEnd="96dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CustParUp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="CalculationButtons"/>
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:layout_marginTop="40dp"
-        android:text="Custom Paradox"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+                android:text="Spend to decrease Paradox"
+                android:textSize="25sp" />
 
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="40dp"
-        android:text="Ritual Interval"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView32"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+            <ImageButton
+                android:id="@+id/CustParUp"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
 
-    <ImageButton
-        android:id="@+id/IncreaseRitualInterval"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toEndOf="@+id/IncreaseManaSpent"
-        app:layout_constraintTop_toBottomOf="@+id/textView43"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="CalculationButtons"/>
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_up_float" />
 
-    <ImageButton
-        android:id="@+id/DecreaseRitualInterval"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toEndOf="@+id/DecreaseManaSpent"
-        app:layout_constraintTop_toBottomOf="@+id/IncreaseRitualInterval"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="CalculationButtons"/>
+            <ImageButton
+                android:id="@+id/CustParDown"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
 
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="44dp"
-        android:text="Spend to decrease Paradox"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CustParDown" />
-
-    <ImageButton
-        android:id="@+id/DecreasePar"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="243dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView52"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="CalculationButtons"/>
-
-    <ImageButton
-        android:id="@+id/IncreasePar"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="243dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DecreasePar"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="CalculationButtons"/>
-
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="34dp"
-        android:text="Total Dice"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/totaldice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="34dp"
-        android:text="0"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView54"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView58"
-        android:layout_width="wrap_content"
-        android:layout_height="31dp"
-        android:layout_marginStart="212dp"
-        android:layout_marginTop="43dp"
-        android:text="Spend Reach"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IncreasePar" />
-
-    <ImageButton
-        android:id="@+id/SpendReach"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="243dp"
-        android:layout_marginTop="28dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView58"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:onClick="CalculationButtons"/>
-
-    <ImageButton
-        android:id="@+id/UnSpendReach"
-        android:layout_width="80dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="243dp"
-        android:layout_marginTop="22dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SpendReach"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        android:onClick="CalculationButtons"/>
-
-    <TextView
-        android:id="@+id/textView59"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:layout_marginTop="34dp"
-        android:text="SpentReach"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/SReach"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/SReach"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="172dp"
-        android:layout_marginTop="32dp"
-        android:text="0"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                android:onClick="CalculationButtons"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="101dp"
-        android:layout_marginTop="145dp"
-        android:text="proceed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView52" />
 
-</android.support.constraint.ConstraintLayout>
+        android:layout_gravity="center"
+        android:text="proceed" />
+
+
+</LinearLayout>

@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".SpellFactors">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
 
 
@@ -97,6 +94,7 @@
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -122,31 +120,32 @@
                 android:textAlignment="center"
                 android:textSize="25sp" />
         </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/IncreasePotency"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="ButtonClick"
-            android:text="Increase Potency"
-            tools:layout_editor_absoluteX="116dp"
-            tools:layout_editor_absoluteY="51dp" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/DecreasePotency"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="ButtonClick"
-            android:text="Decrease Potency"
-            tools:layout_editor_absoluteX="118dp"
-            tools:layout_editor_absoluteY="229dp" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/IncreasePotency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:text="Increase Potency"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="51dp" />
+
+            <Button
+                android:id="@+id/DecreasePotency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ButtonClick"
+                android:text="Decrease Potency"
+                tools:layout_editor_absoluteX="118dp"
+                tools:layout_editor_absoluteY="229dp" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/Duration"
@@ -157,6 +156,7 @@
             android:textSize="25sp"
             tools:layout_editor_absoluteX="200dp"
             tools:layout_editor_absoluteY="32dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -185,8 +185,8 @@
                 tools:layout_editor_absoluteY="98dp" />
 
 
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -216,6 +216,7 @@
                 tools:layout_editor_absoluteX="219dp"
                 tools:layout_editor_absoluteY="152dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -252,6 +253,7 @@
             android:textSize="25sp"
             tools:layout_editor_absoluteX="23dp"
             tools:layout_editor_absoluteY="34dp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -279,8 +281,8 @@
                 tools:layout_editor_absoluteY="112dp" />
 
 
-
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -310,10 +312,9 @@
                 tools:layout_editor_absoluteY="160dp" />
 
 
-
-
-             />
+            />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -341,6 +342,7 @@
                 tools:layout_editor_absoluteX="249dp"
                 tools:layout_editor_absoluteY="112dp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -410,24 +412,7 @@
             tools:layout_editor_absoluteX="55dp"
             tools:layout_editor_absoluteY="298dp" />
 
-    </LinearLayout>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
