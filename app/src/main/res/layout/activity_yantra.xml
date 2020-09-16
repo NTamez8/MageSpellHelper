@@ -59,10 +59,10 @@
         android:id="@+id/Proceed"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginEnd="96dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="16dp"
         android:text="Proceed"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TotalDice"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
@@ -122,8 +122,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -156,8 +156,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -190,8 +190,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -224,8 +224,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -247,6 +247,7 @@
                     android:text="+0">
 
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -285,8 +286,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -319,8 +320,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -353,8 +354,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -387,8 +388,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -421,8 +422,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -444,6 +445,7 @@
                     android:text="+0">
 
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -482,8 +484,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -505,6 +507,7 @@
                     android:text="+0">
 
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -543,8 +546,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -566,6 +569,7 @@
                     android:text="+0">
 
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
@@ -604,8 +608,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:text="ToggleButton"
-                    android:onClick="OnToggleClickYantra"/>
+                    android:onClick="OnToggleClickYantra"
+                    android:text="ToggleButton" />
 
 
                 <TextView
@@ -627,6 +631,7 @@
                     android:text="+0">
 
                 </TextView>
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
