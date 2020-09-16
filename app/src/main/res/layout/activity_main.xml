@@ -1,195 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="36dp"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-        android:layout_marginBottom="32dp"
-        android:onClick="IsRuling"
-        android:text="ToggleButton"
-        android:textOff="is Not Ruling"
-        android:textOn="Is Ruling"
-        app:layout_constraintBottom_toTopOf="@+id/ToPhaseTwo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
-
-    <RadioGroup
-        android:id="@+id/CastingMethod"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="41dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-        <RadioButton
-            android:id="@+id/Improvised"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:onClick="onRadioButtonClickCasting"
-            android:text="Improvised" />
+            android:orientation="vertical" >
 
-        <RadioButton
-            android:id="@+id/Rote"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickCasting"
-            android:text="Rote" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10"
+                android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/Praxis"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickCasting"
-            android:text="Praxis" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Casting Method"
+                    android:textSize="25sp" />
 
-        <RadioButton
-            android:id="@+id/Grimoire"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickCasting"
-            android:text="Grimoire" />
-    </RadioGroup>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Set Arcanum Level"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/CastingMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/Improvised"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClickCasting"
+                        android:text="Improvised" />
+
+                    <RadioButton
+                        android:id="@+id/Rote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClickCasting"
+                        android:text="Rote" />
+
+                    <RadioButton
+                        android:id="@+id/Praxis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClickCasting"
+                        android:text="Praxis" />
+
+                    <RadioButton
+                        android:id="@+id/Grimoire"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClickCasting"
+                        android:text="Grimoire" />
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/ArcanumLevelSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/Spell_Level"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Spell Level"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/SpellLevelSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/Spell_Level"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Primary Spell Factor"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Gnosis"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/PotencyPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:onClick="onRadioButtonClickPrimary"
+                        android:text="Potency" />
+
+                    <RadioButton
+                        android:id="@+id/DurationPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="onRadioButtonClickPrimary"
+                        android:text="Duration" />
+
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/GnosisSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/Gnosis"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="10"
+                android:onClick="IsRuling"
+                android:text="ToggleButton"
+                android:textOff="is Not Ruling"
+                android:textOn="Is Ruling" />
+
+            <Button
+                android:id="@+id/ToPhaseTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10"
+                android:text="Next"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="44dp"
-        android:text="Set Arcanum Level"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="44dp"
-        android:text="Casting Method"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="48dp"
-        android:text="Gnosis"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SpellLevelSpinner" />
-
-    <Button
-        android:id="@+id/ToPhaseTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
-        android:text="Next"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="32dp"
-        android:text="Spell Level"
-        android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/CastingMethod"
-        app:layout_constraintTop_toBottomOf="@+id/ArcanumLevelSpinner" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="76dp"
-        android:text="Primary Spell Factor"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CastingMethod" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="146dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="39dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13">
-
-        <RadioButton
-            android:id="@+id/PotencyPrimary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:onClick="onRadioButtonClickPrimary"
-            android:text="Potency" />
-
-        <RadioButton
-            android:id="@+id/DurationPrimary"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:onClick="onRadioButtonClickPrimary"
-            android:text="Duration" />
-
-    </RadioGroup>
-
-    <Spinner
-        android:id="@+id/SpellLevelSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="139dp"
-        android:layout_marginTop="24dp"
-        android:layout_weight="1"
-        android:entries="@array/Spell_Level"
-        android:spinnerMode="dropdown"
-        app:layout_constraintStart_toEndOf="@+id/CastingMethod"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <Spinner
-        android:id="@+id/GnosisSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="48dp"
-        android:entries="@array/Gnosis"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <Spinner
-        android:id="@+id/ArcanumLevelSpinner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:entries="@array/Spell_Level"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="262dp" />
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
